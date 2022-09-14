@@ -1,31 +1,18 @@
-# Github API
-my second repository in github
-import java.text.ParsePosition;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+This is a sample project students can use during Matthew's Git class.
 
-public class Arguments {
-	public static void main(String[] args) throws Exception {
-		String dt=args[0];
+Here is an addition by me
 
-		SimpleDateFormat sdf = new SimpleDateFormat(dt);
-		Calendar cal = Calendar.getInstance();
+We can have a bit of fun with this repo, knowing that we can always reset it to a known good state.  We can apply labels, and branch, then add new code and merge it in to the master branch.
 
-		java.util.Date date = cal.getTime();
-		
-		System.out.println("Last 10 Days Record");
-		
-		for (int i = 0; i < 10; i++) {
-			cal.add(Calendar.DATE, -1);
-		     date = cal.getTime();
-			String reportDate = sdf.format(date);
+As a quick reminder, this came from one of three locations in either SSH, Git, or HTTPS format:
 
-			System.out.println(reportDate);
-			}
-                }
-              }
-	      ****************************
+* git@github.com:matthewmccullough/hellogitworld.git
+* git://github.com/matthewmccullough/hellogitworld.git
+* https://matthewmccullough@github.com/matthewmccullough/hellogitworld.git
+
+We can, as an example effort, even modify this README and change it as if it were source code for the purposes of the class.
+
+This demo also includes an image with changes on a branch for examination of image diff on GitHub.
 		
 		
 		
